@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>透明滚动条</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <label class="toggle">
+      <input type="checkbox" id="toggleScrollbar">
+      <span class="slider"></span>
+      <span class="label-text">开启透明滚动条</span>
+    </label>
+    <div id="domainInfo" class="domain"></div>
+    <div id="status" class="status"></div>
+    <div class="blocked-wrapper">
+      <div class="blocked-title">已禁用的域名</div>
+      <ul id="blockedList" class="blocked-list"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/* Custom scrollbar theme with 128px width and semi-transparent gray */
+.os-theme-custom {
+    /* Scrollbar width - 128px */
+    --os-size: 128px;
+
+    /* Padding around the scrollbar */
+    --os-padding-perpendicular: 0px;
+    --os-padding-axis: 0px;
+
+    /* Track styling */
+    --os-track-border-radius: 0px;
+    --os-track-bg: none;
+    --os-track-bg-hover: none;
+    --os-track-bg-active: none;
+
+    /* Handle (scrollbar thumb) styling - semi-transparent gray */
+    --os-handle-border-radius: 0px;
+    --os-handle-bg: rgba(255, 255, 255, 0.2);
+    --os-handle-bg-hover: rgba(255, 255, 255, 0.2);
+    --os-handle-bg-active: rgba(255, 255, 255, 0.2);
+
+    --os-handle-border: 1px solid rgba(0, 0, 0, 1);
+    --os-handle-border-hover: 1px solid rgba(0, 0, 0, 1);
+    --os-handle-border-active: 1px solid rgba(0, 0, 0, 1);
+
+    /* Handle size constraints */
+    --os-handle-min-size: 33px;
+    --os-handle-max-size: none;
+
+    /* Handle width/height (perpendicular to scroll direction) */
+    --os-handle-perpendicular-size: 100%;
+    --os-handle-perpendicular-size-hover: 100%;
+    --os-handle-perpendicular-size-active: 100%;
+
+    /* Interactive area offset for easier grabbing */
+    --os-handle-interactive-area-offset: 0px;
+
+    box-sizing: border-box;
+}
+
+/* Optional: Make the scrollbar slightly more visible on hover */
+.os-theme-custom.os-scrollbar:hover {
+    opacity: 1;
+}
